@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+html,body {
+    height: 100%;
+}
+body {
+    background-color: #fafbfe;
+}
+
+a {
+    text-decoration: none;
+    color: #8391a2;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
+
+input, button, label, button, a {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+textarea {
+    border: none;
+    outline: none;
+}
