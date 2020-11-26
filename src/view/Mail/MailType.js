@@ -5,6 +5,7 @@ import SendMail from "./SendMail";
 import ImportantMail from "./ImportantMail";
 import TrashMail from "./TrashMail";
 import TempMail from "./TempMail";
+import MailWriting from "./MailWriting";
 
 const MailType = ({ match, history }) => {
   return (
@@ -21,6 +22,8 @@ const MailType = ({ match, history }) => {
             return <TempMail />;
           case "trashMail":
             return <TrashMail />;
+          case "mailWriting":
+            return <MailWriting />;
           default:
             history.push("/main");
         }

@@ -10,7 +10,7 @@ import BusinessTrip from "./BusinessTrip";
 import Vacation from "./Vacation";
 import Leave from "./Leave";
 import Wysiwyg from "../Wysiwyg";
-import Dropzone from "../DropZone";
+import DropZone from "../DropZone";
 
 const Form = styled.form`
   display: grid;
@@ -202,7 +202,7 @@ const DraftForm = () => {
           </Form>
           {GetHeaderForm()}
           <Wysiwyg />
-          <Dropzone />
+          <DropZone />
           <ButtonGroup>
             <button
               onClick={(e) => {

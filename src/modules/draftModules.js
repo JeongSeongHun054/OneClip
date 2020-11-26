@@ -1,6 +1,6 @@
 import { createAction, handleActions } from "redux-actions";
 
-const DRAFTREMOVE = "draftWriting/REMOVE";
+const DRAFT_REMOVE = "draftWriting/REMOVE";
 
 // export const remove = (id) => ({
 //   type: REMOVE,
@@ -19,7 +19,7 @@ const DRAFTREMOVE = "draftWriting/REMOVE";
 //   }
 // }
 
-export const draftWritingRemove = createAction(DRAFTREMOVE, (id) => id);
+export const draftWritingRemove = createAction(DRAFT_REMOVE, (id) => id);
 
 const initialState = {
   datas: [
@@ -489,7 +489,7 @@ const initialState = {
 
 const draftModules = handleActions(
   {
-    [DRAFTREMOVE]: (state, action) => ({
+    [DRAFT_REMOVE]: (state, action) => ({
       ...state,
       datas: state.datas.filter((data) => data.id !== action.payload),
     }),

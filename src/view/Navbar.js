@@ -120,7 +120,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to="#">
+            <Link to="/mail/getMail/mailWriting">
               <MailOutlineIcon fontSize="large" />
             </Link>
           </li>

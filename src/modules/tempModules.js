@@ -1,8 +1,8 @@
 import { createAction, handleActions } from "redux-actions";
 
-const TEMPREMOVE = "tempStore/REMOVE";
+const TEMP_REMOVE = "tempStore/REMOVE";
 
-export const tempStoreRemove = createAction(TEMPREMOVE, (id) => id);
+export const tempStoreRemove = createAction(TEMP_REMOVE, (id) => id);
 
 const initialState = {
   datas: [
@@ -131,7 +131,7 @@ const initialState = {
 
 const tempModules = handleActions(
   {
-    [TEMPREMOVE]: (state, action) => ({
+    [TEMP_REMOVE]: (state, action) => ({
       ...state,
       datas: state.datas.filter((data) => data.id !== action.payload),
     }),

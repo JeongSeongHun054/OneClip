@@ -7,14 +7,17 @@ import { EditorState } from "draft-js";
 const MyBlock = styled.div`
   .wrapper-class {
     width: 100%;
-    margin: 0 auto;
-    margin-bottom: 4rem;
+    margin: 0 auto 4rem;
   }
   .editor {
     height: 500px !important;
     border: 1px solid #f1f1f1 !important;
     padding: 5px !important;
     border-radius: 2px !important;
+  }
+
+  .DraftEditor-root {
+    height: 400px;
   }
 `;
 

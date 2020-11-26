@@ -6,7 +6,7 @@ import Content from "../common/Content";
 import ContentBody from "../common/ContentBody";
 import PageTitle from "../common/PageTitle";
 import Wysiwyg from "../Wysiwyg";
-import Dropzone from "../DropZone";
+import DropZone from "../DropZone";
 
 const Form = styled.form`
   display: grid;
@@ -162,7 +162,7 @@ const CircuitForm = () => {
             </Box>
           </Form>
           <Wysiwyg />
-          <Dropzone />
+          <DropZone />
           <ButtonGroup>
             <button onClick={(e) => e.preventDefault()}>회람 쓰기</button>
             <button

@@ -15,6 +15,7 @@ import CommunityType from "./Community/CommunityType";
 import DraftForm from "./Draft/DraftForm";
 import CircuitType from "./Circuit/CircuitType";
 import DraftResult from "./Draft/DraftResult";
+import MailWriting from "./Mail/MailWriting";
 
 const App = () => {
   return (
@@ -40,7 +41,12 @@ const App = () => {
           component={CircuitType}
         />
         <Route path="/mail" exact={true} />
-        <Route path="/mail/:mailType" component={MailType} />
+        <Route path="/mail/:mailType" exact={true} component={MailType} />
+        <Route
+          path="/mail/getMail/mailWriting"
+          exact={true}
+          component={MailWriting}
+        />
         <Route path="/community" exact={true} />
         <Route path="/community/:communityType" component={CommunityType} />
         <Route path="/calendar" component={Calendar} />
